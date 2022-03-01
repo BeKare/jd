@@ -1,0 +1,190 @@
+
+/*通用*/
+body,div,ul{
+    margin: 0px;
+    padding: 0px;
+}
+ul{
+    list-style: none;
+}
+a{  
+    text-decoration: none;
+}
+
+/*顶部样式*/
+.header{
+    display: flex;
+    justify-content: center;
+    height: 31px;
+    width: auto;
+    background: #E3E4E5;
+    font: 12px/30px "@微软雅黑";
+}
+.header_left{
+    width: 190px;
+    height: 28px;
+    padding:0 7px;
+}
+.header_right{
+    width: 800px;
+    height:30px;
+}
+.header a{
+    color: #999;
+}
+.header a:hover{
+    color: red;
+}
+.header_list{
+    display: flex;
+}
+.header_list li a:nth-of-type(2){
+    width: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    color: red;
+    margin-left: 4px;
+}
+.header_list li:nth-of-type(1){
+    width: 105px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.header_list li:nth-of-type(9) a{
+    color: red;
+}
+.header_list li:nth-of-type(2n+1){
+    padding: 0 15px 0 10px;
+}
+.header_list li:nth-of-type(2n){
+    width: 1px;
+    height: 10px;
+    background:#ccc;
+    margin: 11px 0;
+}
+
+
+
+/*导航模块的样式*/
+.nav{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    height: 141px;
+    border: 1px solid red;
+}
+.nav_left{
+    width: 190px;
+    height: 120px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+}
+.nav_center{
+    width: 746px;
+    height: 116px;
+    margin-top: 25px;
+    border:1px solid #ccc;
+}
+
+
+/*集装箱模块样式*/
+.container{
+    display: flex;
+    justify-content:center;
+    width: auto;
+    height: 480px;
+    border:1px solid red;
+}
+.container_left{
+    width: 190px;
+    height: 450px;
+    padding:10px 0;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+}
+.container_center{
+    width: 590px;
+    height: 470px;
+    margin: 10px 10px 0;
+    border: 1px solid #ccc;
+}
+.container_right{
+    width:190px;
+    height: 470px;
+    margin-top:10px;
+    border: 1px solid #ccc;
+}
+
+
+ /*今日秒杀模块*/
+ .seckill{
+    display: flex;
+    justify-content: center;
+    border: 1px solid red;
+    height: 260px;
+    width: auto;
+    margin-top: 30px;
+}
+.seckill_left{
+    width: 190px;
+    height: 260px;
+    border: 1px solid #ccc;
+}
+.seckill_center{
+    height: 260px;
+    width: 610px;
+    border: 1px solid #ccc;
+}
+.seckill_right{
+    height: 240px;
+    width: 170px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+
+
+/*特价模块*/
+.spec{
+    width: auto;
+    height: 940px;
+    margin-top: 30px;
+    border: 1px solid red;
+}
+.spec_top_left{
+    width: 490px;
+    height: 330px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+.spec_top_right{
+    width: 490px;
+    height: 330px;
+    border: 1px solid #ccc;
+}
+.spec_center_left{
+    width: 190px;
+    height: 260px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+.spec_top,.spec_center,.spec_bottom{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.spec_center_right{
+    width: 790px;
+    height: 260px;
+    border: 1px solid #ccc;
+}
+.spec_bottom_item{
+    width: 240px;
+    height: 305px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+}
+.spec_bottom_item:nth-of-type(4){
+    margin-right: 0px;
+}
