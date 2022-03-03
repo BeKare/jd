@@ -1,6 +1,6 @@
 
 /*通用*/
-body,div,ul{
+body,div,ul,h4,h3{
     margin: 0px;
     padding: 0px;
 }
@@ -176,7 +176,6 @@ a{
     justify-content:center;
     width: auto;
     height: 480px;
-    border:1px solid red;
 }
 /*左模块的样式*/
 .container_left{
@@ -208,14 +207,129 @@ a{
     width: 590px;
     height: 470px;
     margin: 10px 10px 0;
-    border: 1px solid #ccc;
 }
+
+/*集装箱右侧模块*/
 .container_right{
     width:190px;
     height: 470px;
     margin-top:10px;
     border: 1px solid #ccc;
 }
+.con_right_top img{
+    width: 40px;
+    height: 40px;
+    border-radius: 45rem;
+    margin-right:10px;
+}
+.con_login_top{
+    width: auto;
+    margin:10px 20px;
+    display: flex;
+}
+.con_login_top a{
+    color: black;
+    font:12px/20px "@微软雅黑";
+}
+.con_login_top a:hover{
+    color: red;
+}
+.con_login_bottom{
+    display: flex;
+    justify-content: center;
+    width: auto;
+    padding-bottom:10px;
+    border-bottom: 1px solid #ccc;
+}
+.con_login_bottom a:nth-of-type(1){
+    display: block;
+    width: 70px;
+    height: 25px;
+    font: 13px/25px "@微软雅黑";
+    text-align: center;
+    color: white;
+    background: #e1251b;
+    border-radius:45rem;
+    margin-right: 10px;
+}
+.con_login_bottom a:nth-of-type(2){
+    display: block;
+    width: 70px;
+    height: 25px;
+    font: 13px/25px "@微软雅黑";
+    text-align: center;
+    color: #e5d790;
+    background: #363634;
+    border-radius:45rem;
+}
+.con_login_bottom a:nth-of-type(1):hover,.con_login_bottom a:nth-of-type(2):hover{
+    background: #c81623;
+    color: white;
+}
+/*信息中间部分模块*/
+.message_div{
+    display: flex;
+    justify-content:left;
+    width: 190px;
+    height: 30px;
+    padding-top: 10px;
+    margin-bottom: 8px;
+}
+.message_div h4{
+    margin: 0 50px 0 10px;
+    font: 14px/30px "@微软雅黑";
+    font-weight: bold;
+}
+.message_div h3{
+    font:14px/30px "@微软雅黑";
+    color: #999;
+    margin-left: 20px;
+}
+.message_list li a{
+    color: #666;
+    font:12px/16px "@微软雅黑";
+}
+.message_list li{
+    width: 163px;
+    margin-left: 10px;
+    height: 16px;
+    padding-bottom: 8px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.message_list{
+    border-bottom: 1px solid #ccc;
+}
+.message_list li span{
+    display: inline-block;
+    margin-right: 6px;
+    color: #e1251b;
+    width: 35px;
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+    background: rgba(225,37,27,.08);
+}
+.con_right_bottom ul li{
+    display: flex;
+}
+.con_right_bottom div{
+    width: 63px;
+    height: 55px;
+    position: relative;
+    text-align: center;
+    font: 12px/17px "@微软雅黑";
+}
+
+.con_right_bottom img{
+    width: 28px;
+    height: 28px;
+    margin:0 17px;
+}
+
+
+
 
 
  /*今日秒杀模块*/
@@ -231,7 +345,28 @@ a{
     width: 190px;
     height: 260px;
     border: 1px solid #ccc;
+    background-image: url(/img/bgimg_seckill.png);
+    background-color: #e83632;
 }
+.sec_left_top{
+    margin-top:31px;
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+
+}
+.sec_left_center{
+    font-size: 15px;
+    color: white;
+    margin-top: 90px;
+    text-align: center;
+}
+.sec_left_center span{
+    font-size: 18px;
+    font-weight: bold;
+}
+
 .seckill_center{
     height: 260px;
     width: 610px;
