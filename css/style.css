@@ -1,8 +1,11 @@
 
 /*通用*/
-body,div,ul,h4,h3{
+body,div,ul,h4,h3,p{
     margin: 0px;
     padding: 0px;
+}
+body{
+    background: #f4f4f4;
 }
 ul{
     list-style: none;
@@ -72,6 +75,7 @@ a{
     display: flex;
     justify-content: center;
     height: 141px;
+    background: white;
 }
 .nav_left{
     width: 190px;
@@ -143,6 +147,9 @@ a{
     color: #999;
     font:12px/20px "@微软雅黑";
 }
+.sea_list li:nth-of-type(1) a{
+    color: red;
+}
 .sea_list_bottom{
     display: flex;
     width: auto;
@@ -184,6 +191,7 @@ a{
     padding:10px 0;
     margin-top: 10px;
     border: 1px solid #ccc;
+    background: white;
 }
 .container_left_list li{
     padding-left: 18px;
@@ -207,6 +215,7 @@ a{
     width: 590px;
     height: 470px;
     margin: 10px 10px 0;
+    background: white;
 }
 
 /*集装箱右侧模块*/
@@ -215,6 +224,7 @@ a{
     height: 470px;
     margin-top:10px;
     border: 1px solid #ccc;
+    background: white;
 }
 .con_right_top img{
     width: 40px;
@@ -289,6 +299,9 @@ a{
     color: #666;
     font:12px/16px "@微软雅黑";
 }
+.message_list li a:hover{
+    color: red;
+}
 .message_list li{
     width: 163px;
     margin-left: 10px;
@@ -336,7 +349,6 @@ a{
  .seckill{
     display: flex;
     justify-content: center;
-    border: 1px solid red;
     height: 260px;
     width: auto;
     margin-top: 30px;
@@ -344,8 +356,7 @@ a{
 .seckill_left{
     width: 190px;
     height: 260px;
-    border: 1px solid #ccc;
-    background-image: url(/img/bgimg_seckill.png);
+    background-image: url(../img/bgimg_seckill.png);
     background-color: #e83632;
 }
 .sec_left_top{
@@ -361,6 +372,7 @@ a{
     color: white;
     margin-top: 90px;
     text-align: center;
+    
 }
 .sec_left_center span{
     font-size: 18px;
@@ -370,13 +382,89 @@ a{
 .seckill_center{
     height: 260px;
     width: 610px;
-    border: 1px solid #ccc;
+    background: white;
 }
+.seckill_center ul{
+    display: flex;
+    text-align:center;
+    cursor: pointer;
+}
+.seckill_center img{
+    width: 140px;
+    height: 140px;
+    margin-top: 32px;
+
+}
+.seckill_center h6{
+    width: 160px;
+    margin:13px 21px 0;
+    font-weight:400;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 12px;
+    text-overflow: ellipsis;
+}
+.seckill_center span{
+    display: block;
+    margin-top: 7px;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 700;
+    color: #e1251b;
+}
+.seckill_center ul li:nth-of-type(2n){
+    width: 1px;
+    background: #eee;
+    height: 200px;
+    margin-top: 30px;
+}
+.seckill_center ul li:nth-of-type(2n+1):hover{
+    color: red;
+}
+.seckill_center ul li{
+    width: 203px;
+    height: 260px;
+}
+
+
+
+
 .seckill_right{
     height: 240px;
     width: 170px;
     padding: 10px;
-    border: 1px solid #ccc;
+    text-align: center;
+    background: white;
+}
+.seckill_right img{
+    width: 120px;
+    height: 120px;
+    margin: 10px 0;
+}
+.sec_right_p1{
+    font: 14px/21px "@微软雅黑";
+    height: 21px;
+}
+.sec_right_p2{
+    font: 14px/21px "@微软雅黑";
+    height: 21px;
+    font-weight: 700;
+}
+.sec_right_bottom{
+    width: 170px;
+    height: 90px;
+    margin-top: 10px;
+    background:linear-gradient(180deg,rgba(255,255,255,.5),rgba(220,224,236,.5));
+}
+.sec_right_div{
+    font: 12px/24px "@微软雅黑";
+    border-radius: 14px;
+    width: 82px;
+    height: 24px;
+    border: 1px solid #e1251b;
+    color: #e1251b;
+    display: inline-block;
+    justify-content: center;
 }
 
 
