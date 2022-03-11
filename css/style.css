@@ -1,6 +1,6 @@
 
 /*通用*/
-body,div,ul,h4,h3,p{
+body,div,ul,h1,h4,h3,p{
     margin: 0px;
     padding: 0px;
 }
@@ -21,7 +21,8 @@ a{
     height: 31px;
     width: auto;
     background: #E3E4E5;
-    font: 12px/30px "@微软雅黑";
+    
+    font-size:12px;
 }
 .header_left{
     width: 190px;
@@ -40,6 +41,7 @@ a{
 }
 .header_list{
     display: flex;
+    align-items: center;
 }
 .header_list li a:nth-of-type(2){
     width: 16px;
@@ -216,6 +218,7 @@ a{
     height: 470px;
     margin: 10px 10px 0;
     background: white;
+    cursor: pointer;
 }
 
 /*集装箱右侧模块*/
@@ -476,21 +479,106 @@ a{
     margin-top: 30px;
     border: 1px solid red;
 }
+.spec_item_top{
+    display: flex;
+    justify-content: left;
+    width: 490px;
+    height: 60px;
+    padding: 0 20px;
+    align-items: center;
+    position: relative;
+}
+.spec_item_top h3{
+    width: 112px;
+    font-size:24px;
+}
+.spec_item_top span{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    align-items: center;
+    margin-top:4px;
+    border: 2px solid red;
+    color: red;
+    border-radius: 45rem;
+}
+.spec_top_list{
+    display: flex;
+    position: relative;
+    left: 100px;
+    align-items: right;
+}
+.spec_top_list li{
+    font-size:14px;
+    width: 28px;
+    height: 21px;
+    padding: 15px;
+}
+.spec_top_list a{
+    color: #999;
+}
+.spec_top_list a:hover{
+    display: inline-block;
+    color: red;
+    border-bottom: 2px solid red;
+}
+.spec_inner{
+    width: 490px;
+    height: 280px;
+    padding: 0 10px 10px;
+    position:relative;
+}
+
+
+.inner_item{
+    width: 146px;
+    height: 235px;
+    background: #f4f4f4;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.inner_item img{
+    width: 100px;
+    height: 100px;
+}
+.inner_item h1{
+    font:14px/19px "微软雅黑";
+    justify-content: center;
+    width:126px;
+    height: 19px;
+    margin:9px 0 4px;
+}
+.item_top{
+    color: white;
+    width: 90px;
+    height:24px;
+    background-image: linear-gradient(-15deg,rgba(247,164,0) 50%,rgba(246,183,61)50%);
+    text-align: center;
+    font: 12px/24px "微软雅黑";
+    font-weight: 700;
+}
+
+
 .spec_top_left{
     width: 490px;
     height: 330px;
     border: 1px solid #ccc;
     margin-right: 10px;
+    background:white;
 }
 .spec_top_right{
     width: 490px;
     height: 330px;
     border: 1px solid #ccc;
+    background:white;
 }
 .spec_center_left{
     width: 190px;
     height: 260px;
     border: 1px solid #ccc;
+    background:white;
     margin-right: 10px;
 }
 .spec_top,.spec_center,.spec_bottom{
@@ -502,12 +590,14 @@ a{
     width: 790px;
     height: 260px;
     border: 1px solid #ccc;
+    background:white;
 }
 .spec_bottom_item{
     width: 240px;
     height: 305px;
     margin-right: 10px;
     border: 1px solid #ccc;
+    background:white;
 }
 .spec_bottom_item:nth-of-type(4){
     margin-right: 0px;
